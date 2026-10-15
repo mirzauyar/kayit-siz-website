@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BTF · bademlik tasarım</title>
+  <meta name="description" content="BTF: etkinlik arşivi ve yaklaşan etkinliklere kayıt.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Josefin+Sans:wght@200;300;400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-site="btf" class="theme-dark">
+  <header class="nav">
+    <a class="nav-logo" href="btf.html"><span class="hl">BTF</span></a>
+    <nav class="nav-links">
+      <a href="#etkinlikler">etkinlikler</a>
+      <a href="#arsiv">arşiv</a>
+      <a class="nav-other" href="index.html" aria-label="kayıt-sız sayfası">kayıt-sız</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 class="hero-logo" aria-label="BTF"></h1>
+      <p class="hero-slogan"></p>
+      <p class="hero-text"></p>
+      <div class="hero-cta">
+        <a class="btn btn-y" href="#etkinlikler">kayıt ol</a>
+        <a class="btn" href="#arsiv">arşive bak</a>
+      </div>
+      <div class="hero-shapes" aria-hidden="true"><i></i><i></i><i></i></div>
+    </section>
+
+    <div class="marquee" aria-hidden="true"><div class="marquee-track"></div></div>
+
+    <section id="etkinlikler" class="section">
+      <h2 class="title"><span class="hl wipe">yaklaşan etkinlikler</span></h2>
+      <div class="events"></div>
+    </section>
+
+    <section id="arsiv" class="section">
+      <h2 class="title"><span class="hl wipe">arşiv</span></h2>
+      <div class="filters"></div>
+      <div class="archive"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="hl">BTF</span>
+    <a class="footer-ig" target="_blank" rel="noopener">instagram</a>
+  </footer>
+
+  <a class="corner-badge" href="index.html" aria-label="kayıt-sız sayfasına dön">
+    <svg viewBox="0 0 100 100" aria-hidden="true">
+      <defs><path id="circ" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs>
+      <text><textPath href="#circ" textLength="234" lengthAdjust="spacing">kayıt-sız ✱ kayıt-sız ✱ kayıt-sız ✱</textPath></text>
+    </svg>
+    <b>k-s</b>
+  </a>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
