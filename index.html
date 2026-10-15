@@ -3,69 +3,108 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>kayıt-sız · öğrenci kulübü</title>
-  <meta name="description" content="kayıt-sız öğrenci kulübü: etkinlik arşivi ve yaklaşan etkinliklere kayıt.">
+  <title>kayıt-sız · ESOGÜ Mimarlık ve Tasarım Kulübü</title>
+  <meta name="description" content="kayıt-sız: Eskişehir Osmangazi Üniversitesi Mimarlık ve Tasarım Kulübü. Etkinlik arşivi ve yaklaşan etkinliklere kayıt.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Josefin+Sans:wght@200;300;400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
-<body data-site="kayitsiz">
-  <header class="nav">
-    <a class="nav-logo" href="index.html"><span class="hl">kayıt-sız</span></a>
-    <nav class="nav-links">
-      <a href="#etkinlikler">etkinlikler</a>
-      <a href="#arsiv">arşiv</a>
-      <a href="#isletmeler">indirimler</a>
-      <a class="nav-other" href="btf.html" aria-label="BTF sayfası">BTF</a>
-    </nav>
+<body>
+  <!-- posterlerdeki sağdaki dikey çizgi -->
+  <div class="spine" aria-hidden="true"></div>
+
+  <header class="top">
+    <a class="uni" href="#">
+      <span class="uni-1"></span>
+      <span class="uni-2"></span>
+    </a>
+    <a class="logo" href="#" aria-label="kayıt-sız ana sayfa">
+      <span class="logo-a">kayıt</span><span class="logo-b">-sız</span>
+    </a>
   </header>
 
+  <!-- posterlerdeki "etkinlik / atölye / söyleşi / sinema" listesi -->
+  <aside class="side">
+    <nav class="cats" aria-label="kategoriler">
+      <span class="cats-mark" aria-hidden="true"></span>
+    </nav>
+    <nav class="pages" aria-label="bölümler">
+      <a href="#kayit">kayıt</a>
+      <a href="#arsiv">arşiv</a>
+      <a href="#indirim">indirimler</a>
+    </nav>
+    <a class="btf" target="_blank" rel="noopener" title="Bademlik Tasarım Festivali">
+      <img src="assets/btf-logo.png" alt="BTF · Bademlik Tasarım Festivali">
+    </a>
+  </aside>
+
   <main>
-    <section class="hero">
-      <h1 class="hero-logo" aria-label="kayıt-sız"></h1>
-      <p class="hero-slogan"></p>
-      <p class="hero-text"></p>
-      <div class="hero-cta">
-        <a class="btn btn-y" href="#etkinlikler">kayıt ol</a>
-        <a class="btn" href="#arsiv">arşive bak</a>
+    <section class="hero" aria-label="giriş">
+      <svg class="hero-art" viewBox="0 0 600 600" aria-hidden="true">
+        <defs>
+          <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+            <path d="M30 0H0V30" fill="none" stroke="#000" stroke-opacity=".12" stroke-width="1"/>
+          </pattern>
+          <pattern id="dots" width="12" height="12" patternUnits="userSpaceOnUse">
+            <circle cx="6" cy="6" r="2.2" fill="#000" fill-opacity=".18"/>
+          </pattern>
+        </defs>
+        <rect class="a-grid" width="600" height="600" fill="url(#grid)"/>
+        <circle class="a-dots" cx="420" cy="170" r="150" fill="url(#dots)"/>
+        <g class="a-rays"></g>
+        <path class="a-tri" d="M300 70 L520 520 L80 520 Z" fill="none" stroke="#000" stroke-width="2"/>
+        <path class="a-dash d1" d="M0 140 L600 360" />
+        <path class="a-dash d2" d="M600 90 L60 600" />
+        <path class="a-dash d3" d="M0 470 L600 430" />
+        <circle class="a-c y c1" cx="200" cy="300" r="34"/>
+        <circle class="a-c o c2" cx="430" cy="440" r="46"/>
+        <circle class="a-c y c3" cx="300" cy="520" r="28"/>
+        <circle class="a-c r c4" cx="360" cy="260" r="22"/>
+        <rect class="a-sq s1" x="288" y="58" width="24" height="24"/>
+        <rect class="a-sq s2" x="508" y="508" width="24" height="24"/>
+        <rect class="a-sq s3" x="68" y="508" width="24" height="24"/>
+      </svg>
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="ln">bademlik'te</span>
+          <span class="ln ln-2"><span class="swap" aria-live="polite">atölye</span></span>
+          <span class="ln ln-3">zamanı.</span>
+        </h1>
+        <p class="hero-sub">Eskişehir Osmangazi Üniversitesi Mimarlık ve Tasarım Kulübü'nün etkinlik arşivi ve kayıt sayfası.</p>
+        <div class="next"></div>
       </div>
-      <div class="hero-shapes" aria-hidden="true"><i></i><i></i><i></i></div>
     </section>
 
-    <div class="marquee" aria-hidden="true"><div class="marquee-track"></div></div>
-
-    <section id="etkinlikler" class="section">
-      <h2 class="title"><span class="hl wipe">yaklaşan etkinlikler</span></h2>
+    <section id="kayit" class="sec">
+      <h2 class="h"><span class="h-in">yaklaşan etkinlikler</span></h2>
       <div class="events"></div>
     </section>
 
-    <section id="arsiv" class="section">
-      <h2 class="title"><span class="hl wipe">arşiv</span></h2>
+    <svg class="waves" viewBox="0 0 1200 160" preserveAspectRatio="none" aria-hidden="true"></svg>
+
+    <section id="arsiv" class="sec">
+      <h2 class="h"><span class="h-in">arşiv</span></h2>
       <div class="filters"></div>
       <div class="archive"></div>
     </section>
 
-    <section id="isletmeler" class="section">
-      <h2 class="title"><span class="hl wipe">anlaşmalı işletmeler</span></h2>
-      <p class="muted">kulüp kartını göster, indirimi al.</p>
+    <section id="indirim" class="sec">
+      <h2 class="h"><span class="h-in">anlaşmalı işletmeler</span></h2>
+      <p class="lead">kulüp üyeliğini göster, indirimi al.</p>
       <div class="partners"></div>
     </section>
   </main>
 
-  <footer class="footer">
-    <span class="hl">kayıt-sız</span>
-    <a class="footer-ig" target="_blank" rel="noopener">instagram</a>
+  <!-- posterlerin alt bilgi satırı -->
+  <footer class="foot">
+    <div class="foot-row">
+      <div><b>İLETİŞİM</b><a class="ig-dm" target="_blank" rel="noopener">instagram'dan yaz</a></div>
+      <div><b>YER</b><span class="kampus"></span></div>
+      <div><b>SOSYAL MEDYA</b><a class="ig" target="_blank" rel="noopener"></a></div>
+      <div><b>KULÜP</b><span>kayıt-sız</span></div>
+    </div>
   </footer>
-
-  <!-- köşedeki BTF rozeti -->
-  <a class="corner-badge" href="btf.html" aria-label="BTF sayfasına git">
-    <svg viewBox="0 0 100 100" aria-hidden="true">
-      <defs><path id="circ" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs>
-      <text><textPath href="#circ" textLength="234" lengthAdjust="spacing">bademlik tasarım ✱ bademlik tasarım ✱</textPath></text>
-    </svg>
-    <b>BTF</b>
-  </a>
 
   <script src="assets/data.js"></script>
   <script src="assets/app.js"></script>

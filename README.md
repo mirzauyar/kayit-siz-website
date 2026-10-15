@@ -1,17 +1,17 @@
 # kayıt-sız web sitesi
 
-Kulübün etkinlik arşivi ve yaklaşan etkinliklere kayıt sitesi. Sağ alt köşedeki **BTF** rozeti aynı mantıkta hazırlanmış BTF sayfasına götürür.
+ESOGÜ Mimarlık ve Tasarım Kulübü (kayıt-sız) için etkinlik arşivi ve yaklaşan etkinliklere kayıt sitesi. Tasarım dili kulübün posterlerinden alındı. Sağ alttaki **BTF** logosu şimdilik BTF'nin Instagram sayfasına gider; BTF sitesi hazır olunca `data.js` içindeki `btf.link` değiştirilir.
 
 | Dosya | Ne işe yarar |
 |---|---|
 | `index.html` | kayıt-sız ana sayfası |
-| `btf.html` | BTF sayfası |
+| `assets/btf-logo.png` | BTF logosu |
 | `assets/data.js` | **Tüm içerik burada**: etkinlikler, arşiv, indirimler, kayıt formu adresi |
 | `assets/posters/` | Poster görsellerinin konacağı klasör |
 
 ## İçerik nasıl güncellenir?
 1. `assets/data.js` dosyasını GitHub'da açıp kalem simgesine basın.
-2. Yeni etkinlik için `etkinlikler` listesindeki bir bloğu kopyalayıp bilgileri değiştirin.
+2. Yeni etkinlik için `ETKINLIKLER` listesindeki bir bloğu kopyalayıp bilgileri değiştirin.
 3. Tarihi geçen etkinlikler kendiliğinden arşive düşer.
 4. Poster eklemek için görseli `assets/posters/` klasörüne yükleyin, adını `poster: "dosya-adi.jpg"` olarak yazın. Boş bırakılırsa site başlıktan otomatik bir poster çizer.
 
